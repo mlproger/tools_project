@@ -1,0 +1,11 @@
+digraph "classes" {
+rankdir=BT
+charset="utf-8"
+"tool.AccumulatorHandTool" [color="black", fontcolor="black", label=<{AccumulatorHandTool|charge_tool<br ALIGN="LEFT"/>|use(): None<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"tool.ElectricTool" [color="black", fontcolor="black", label=<{ElectricTool|power : float<br ALIGN="LEFT"/>socket : str<br ALIGN="LEFT"/>voltage : float<br ALIGN="LEFT"/>|use(): None<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"tool.HandTool" [color="black", fontcolor="black", label=<{HandTool|<br ALIGN="LEFT"/>|use(): None<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"tool.Tool" [color="black", fontcolor="black", label=<{Tool|name : str<br ALIGN="LEFT"/>type : str<br ALIGN="LEFT"/>|<I>use</I>(): None<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"tool.AccumulatorHandTool" -> "tool.HandTool" [arrowhead="empty", arrowtail="none"];
+"tool.ElectricTool" -> "tool.Tool" [arrowhead="empty", arrowtail="none"];
+"tool.HandTool" -> "tool.Tool" [arrowhead="empty", arrowtail="none"];
+}
