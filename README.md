@@ -40,25 +40,18 @@
 
 ## 📂 Структура проекта
 ```
-инвентаризация-инструментов/
-├── backend/ # Серверная часть
-│ ├── app/
-│ │ ├── db/ # Модели и подключение к БД
-│ │ ├── routes/ # API-эндпоинты
-│ │ └── main.py # Входная точка
-│ ├── Dockerfile
-│ └── requirements.txt
-│
-├── frontend/ # Клиентская часть
-│ ├── public/
-│ ├── src/
-│ │ ├── components/ # React-компоненты
-│ │ ├── pages/ # Страницы приложения
-│ │ └── App.js # Корневой компонент
-│ ├── Dockerfile
-│ └── package.json
-│
-└── docker-compose.yml # Конфигурация Docker
+```
+tools_projecct/
+├── backend/         # Серверная часть (FastAPI, SQLAlchemy)
+│   ├── api_v1/      # Маршруты и бизнес-логика API
+│   ├── domain/      # Описание сущностей (классы инструментов)
+│   ├── services/    # Подключение к базе данных
+│   └── main.py      # Точка входа FastAPI
+├── frontend/        # Клиентская часть (React)
+│   └── src/components/ToolsTablePage.jsx
+├── docker-compose.yml
+└── README.md
+```
 ```
 
 ---
