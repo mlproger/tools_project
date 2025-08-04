@@ -40,7 +40,6 @@
 
 ## 📂 Структура проекта
 ```
-```
 tools_projecct/
 ├── backend/         # Серверная часть (FastAPI, SQLAlchemy)
 │   ├── api_v1/      # Маршруты и бизнес-логика API
@@ -51,7 +50,7 @@ tools_projecct/
 │   └── src/components/ToolsTablePage.jsx
 ├── docker-compose.yml
 └── README.md
-```
+
 ```
 
 ---
